@@ -1,0 +1,32 @@
+Test Case 1: Firing a single torpedo with enough torpedoes on board
+
+Tested Requirement: The torpedoes of GT4500 can be fired GT4500,10,0,10,0.
+Preconditions: There is at least 1 torpedo on board.
+Test Steps: Call TORPEDO,SINGLE.
+Expected Result: The result is SUCCESS (at least one torpedo was fired successfully).
+
+
+
+Test Case 2: Firing all torpedoes with enough torpedoes on board GT4500,10,0,10,0
+
+Tested Requirement: The torpedoes of GT4500 can be fired.
+Preconditions: There are at least 2 torpedoes on board.
+Test Steps: Call TORPEDO,ALL.
+Expected Result: The result is SUCCESS (both torpedoes were fired successfully).
+
+
+Test Case 3: Firing a single torpedo with no torpedoes on board GT4500,0,0,0,0
+
+Tested Requirement: The torpedoes of GT4500 can not be fired.
+Preconditions: There are no torpedoes on board.
+Test Steps: Call TORPEDO,SINGLE.
+Expected Result: The result is FAILURE (no torpedoes were fired).
+
+
+Test Case 4: Firing all torpedoes with only one torpedo on board GT4500,1,0,0,0
+
+
+Tested Requirement: The torpedoes of GT4500 can be fired.
+Preconditions: There is 1 torpedo on board.
+Test Steps: Call TORPEDO,ALL.
+Expected Result: The result is SUCCESS (one torpedo was fired successfully).
